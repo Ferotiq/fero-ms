@@ -27,7 +27,7 @@ console.log(ms(100800000, { long: true })); // Expected Output: "1 day 4 hours"
 
 ```js
 console.log(ms("1d4h", {
-    disabledUnits: ["millisecond"], // The units not to parse/output
+    disabledUnits: ["millisecond"], // The units not to parse/output; Default: []
     returnDate: true // Whether or not to return a Date (now + result) when using the string -> number conversion; Default: true
 })); // Expected Output: 2021-09-06T01:45:51.403Z (as of time of writing);
 console.log(ms(100800000, {
